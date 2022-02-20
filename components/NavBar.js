@@ -13,17 +13,17 @@ function NavBar() {
   //   }, [active]);
 
   return (
-    <div className="flex items-center justify-center h-24 bg-black">
+    <div className="flex items-center justify-center h-24 bg-black ">
       {Object.keys(panels).map((key) => (
         <h3
           key={key}
           ref={panels[key]}
           onClick={() => setActive(panels[key])}
-          className={`mx-5  box-border text-2xl font-bold ${
+          className={`mx-5  box-border text-2xl font-bold font-bebas ${
             active === panels[key]
-              ? 'text-stone-50 border-b-4 border-b-yellow-300'
-              : 'text-stone-400'
-          } border-b-4 border-b-transparent hover: cursor-pointer`}
+              ? 'border-b-4 border-b-yellow-300 text-stone-50 '
+              : 'border-b-4 border-b-transparent text-stone-400'
+          }  hover: cursor-pointer`}
         >
           PANEL {key}
         </h3>

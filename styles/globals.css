@@ -2,8 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'HelveticaNeue';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('/fonts/HelveticaNeueLTPro-Md.woff') format('woff');
+}
+@font-face {
+  font-family: 'BebasBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), url('/fonts/396129_0_0.woff') format('woff');
+}
+
 @layer base {
   html {
     font-family: Helvetica;
+  }
+}
+@layer utilities {
+  @variants responsive {
+    .text-shadow {
+      text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+        -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black,
+        0px -2px 0 black;
+    }
+    /* .text-shadow {
+      text-shadow: 2px 2px 2px black;
+    } */
   }
 }

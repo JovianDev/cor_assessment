@@ -3,11 +3,17 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
-  theme: { 
-    fontFamily:{
-      
+  theme: {
+    fontFamily: {
+      helvetica: ['HelveticaNeue'],
+      bebas: ['BebasBold'],
     },
-    extend: {},
+    extend: {
+      fontFamily: ['hover', 'focus'],
+    },
   },
   plugins: [],
+  corePlugins: {
+    fontFamily: true,
+  },
 };
