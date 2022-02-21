@@ -10,6 +10,19 @@ module.exports = {
     },
     extend: {
       fontFamily: ['hover', 'focus'],
+      keyframes: {
+        selectUp: {
+          '0%': {
+            transform: 'translateY(0)',
+          },
+          '100%': {
+            transform: 'translateY(-3px)',
+          },
+        },
+      },
+      animation: {
+        selectUp: 'selectUp 0.5s forwards',
+      },
     },
   },
   plugins: [],

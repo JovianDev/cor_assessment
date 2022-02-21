@@ -6,13 +6,14 @@
   font-family: 'HelveticaNeue';
   font-style: normal;
   font-weight: 400;
-  src: local(''), url('/fonts/HelveticaNeueLTPro-Md.woff') format('woff');
+  src: local(''),
+    url('/fonts/helvetica-neue/HelveticaNeueLTPro-Md.woff') format('woff');
 }
 @font-face {
   font-family: 'BebasBold';
   font-style: normal;
   font-weight: 600;
-  src: local(''), url('/fonts/396129_0_0.woff') format('woff');
+  src: local(''), url('/fonts/bebas/396129_0_0.woff') format('woff');
 }
 
 @layer base {
