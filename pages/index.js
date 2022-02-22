@@ -5,6 +5,8 @@ import Memory from '../components/Memory';
 import ICUE from '../components/ICUE';
 import TechSpecs from '../components/TechSpecs';
 import Mouse from '../components/Mouse';
+import Keyboard from '../components/Keyboard';
+import Flavor from '../components/Flavor';
 
 export default function Home() {
   const { observe, inView } = useInView({
@@ -25,6 +27,8 @@ export default function Home() {
         </div>
         <ICUE />
         <Mouse />
+        <Keyboard />
+        <Flavor/>
         <div ref={observe}>
           <TechSpecs id="panel5" />
         </div>

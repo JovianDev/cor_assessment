@@ -12,7 +12,7 @@ function ICUE() {
     '/img/iCUE-carousel_slide06.webp',
   ];
   return (
-    <div className="w-full h-full p-32 m-0 bg-[url('/img/iCUE-panel-bg.jpg')] bg-no-repeat flex">
+    <div className="w-full h-full py-[4rem] px-20 m-0 bg-[url('/img/iCUE-panel-bg.jpg')] bg-no-repeat bg-cover flex justify-center">
       <div
         className="flex flex-col items-start justify-center w-[30]"
         name="cue-info"
@@ -40,7 +40,7 @@ function ICUE() {
           className="w-48 px-8 py-4 my-10 font-bold bg-stone-50 font-helvetica hover:cursor-pointer hover:bg-stone-300 hover:shadow-md hover:animate-selectUp"
         />
       </div>
-      <div className="w-[70%]  " name="icue-carousel">
+      <div className="w-[50%] h-full  " name="icue-carousel">
         <ImgCarousel slideImg={slideImg} />
       </div>
     </div>

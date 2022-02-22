@@ -10,31 +10,19 @@ function ImgCarousel({ slideImg }) {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
     rows: 1,
     centerMode: true,
     lazyLoad: true,
-    variableWidth: true,
-    centerPadding: '100px',
-    customPaging: function (i) {
-      return (
-        <a>
-          <img
-            src={images[i].src}
-            height="100%"
-            width="100%"
-            alt={images[i].alt}
-          />
-        </a>
-      );
-    },
+    variableWidth: false,
+    centerPadding: '0px',
   };
   return (
     <div className="">
-      <div name="sliderContainer" className="relative top-32">
-        <div name="sliderButtons" className="absolute -top-20 left-28">
+      <div name="sliderContainer" className="relative w-full pt-20">
+        <div name="sliderButtons" className="absolute -top-2 left-20">
           <button
             onClick={() => carousel.current.slickPrev()}
             className="my-6 mr-2 font-bold text-stone-50"
@@ -67,12 +55,9 @@ function ImgCarousel({ slideImg }) {
             </svg>
           </button>
         </div>
-        <Slider {...settings} ref={carousel} className="h-full">
+        <Slider {...settings} ref={carousel} className="h-full ml-20">
           {slideImg.map((img) => (
-            <div
-              key={img}
-              className="flex items-center justify-center h-full mx-32"
-            >
+            <div key={img} className="flex items-center justify-center h-full ">
               <Image
                 src={img}
                 alt="carousel image"

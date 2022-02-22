@@ -26,7 +26,7 @@ function TechSpecs() {
   return (
     <div className="p-24 text-gray-100">
       <div>
-        <h1 className="text-5xl font-bold"> TECH SPECS</h1>
+        <h1 className="text-5xl font-bold font-bebas"> TECH SPECS</h1>
       </div>
       <div>
         {specs && (
