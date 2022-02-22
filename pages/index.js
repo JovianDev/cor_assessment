@@ -17,7 +17,7 @@ export default function Home() {
   console.log(inView);
   return (
     <div className="flex flex-col h-screen bg-black padd">
-      <div className="fixed right-0 left-0 z-[999]">
+      <div className="fixed right-0 left-0 z-[999] md:hidden">
         <NavBar />
       </div>
       {/* <main className="flex flex-col items-center justify-start flex-1 overflow-y-auto"> */}

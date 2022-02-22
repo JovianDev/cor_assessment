@@ -25,7 +25,9 @@ function NavBar() {
               : 'border-b-4 border-b-transparent text-stone-400'
           }  hover: cursor-pointer`}
         >
-          <a href={`#panel${key}`}>PANEL {key}</a>
+          <a className="scroll-smooth" href={`#panel${key}`}>
+            PANEL {key}
+          </a>
         </h3>
       ))}
     </div>
