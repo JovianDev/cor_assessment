@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-function Memory() {
+function Hero() {
   return (
     <div
       className="relative flex items-center justify-center w-screen  m-0 min-h-[50vh] overflow-hidden"
@@ -10,7 +10,7 @@ function Memory() {
         loop
         autoPlay
         muted
-        className="absolute min-w-full min-h-full top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%] z-[0] "
+        className="absolute min-w-full min-h-full top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%] z-[0] xl:scale-none  "
       >
         <source src="/video/hero-bg.mp4" type="video/mp4" />
       </video>
@@ -20,10 +20,10 @@ function Memory() {
           h-full w-full  z-[1] overflow-hidden"
         name="memory-text-container"
       >
-        <p className="mb-6 text-3xl font-semibold text-yellow-300 font-helvetica ">
+        <p className="mb-6 text-2xl font-semibold tracking-widest text-yellow-300 text-shadow font-helvetica">
           MAKE THE JUMP TO HYPERSPEED
         </p>
-        <h1 className="font-bold text-shadow font-helvetica text-stone-50 text-7xl">
+        <h1 className="font-bold text-shadow font-bebas text-stone-50 text-8xl">
           CORSAIR MEMORY
         </h1>
         <p className="mt-6 text-2xl font-medium font-helvetica text-stone-50 text-shadow">
@@ -38,4 +38,4 @@ function Memory() {
   );
 }
 
-export default Memory;
+export default Hero;

@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 
 function Mouse() {
   return (
-    <div className="flex items-center bg-[url('/img/bg-TriHexBackground3.png')] bg-cover bg-center w-full h-full">
+    <div className="flex items-center bg-[url('/img/bg-TriHexBackground3.png')] bg-cover bg-center w-full min-h-[50vh]">
       <div name="mouse-info" className="flex flex-col items-start flex-1 p-24">
         <h3 className="text-5xl font-bold font-bebas text-stone-50">
           PERFECT BALANCE

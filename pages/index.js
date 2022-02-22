@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useInView from 'react-cool-inview';
 import NavBar from '../components/NavBar';
-import Memory from '../components/Memory';
+import Hero from '../components/Hero';
 import ICUE from '../components/ICUE';
 import TechSpecs from '../components/TechSpecs';
 import Mouse from '../components/Mouse';
@@ -23,14 +23,22 @@ export default function Home() {
       {/* <main className="flex flex-col items-center justify-start flex-1 overflow-y-auto"> */}
       <main className="flex flex-col items-center flex-1 pt-24 overflow-y-auto">
         <div className="relative">
-          <Memory id="panel1" name="panel1" />
+          <Hero />
         </div>
-        <ICUE />
-        <Mouse />
-        <Keyboard />
-        <Flavor/>
-        <div ref={observe}>
-          <TechSpecs id="panel5" />
+        <div id="panel1" className="w-full">
+          <ICUE />
+        </div>
+        <div id="panel2" className="w-full">
+          <Mouse />
+        </div>
+        <div id="panel3" className="w-full">
+          <Keyboard />
+        </div>
+        <div id="panel4" className="w-full">
+          <Flavor />
+        </div>
+        <div id="panel5" className="w-full" ref={observe}>
+          <TechSpecs />
         </div>
       </main>
     </div>

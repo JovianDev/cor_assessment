@@ -25,7 +25,7 @@ function NavBar() {
               : 'border-b-4 border-b-transparent text-stone-400'
           }  hover: cursor-pointer`}
         >
-          PANEL {key}
+          <a href={`#panel${key}`}>PANEL {key}</a>
         </h3>
       ))}
     </div>

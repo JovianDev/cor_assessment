@@ -3,7 +3,13 @@ import React from 'react';
 
 function Flavor() {
   return (
-    <div className="flex px-5 bg-[url(/img/bg-creme-min.png)] bg-cover bg-center w-full min-h-[50vh]">
+    <div
+      className="relative flex px-5 bg-[url(/img/bg-creme-min.png)] bg-cover bg-center w-full min-h-[50vh] overflow-hidden"
+      id="panel4"
+    >
+      {/* <div className="absolute bottom-0 left-0 z-[99]">
+        <video autoPlay muted src="video/fruit.mp4" />
+      </div> */}
       <div className="flex flex-col justify-center pl-20">
         <h3 className="mb-4 mr-0 text-5xl font-bebas">FLAVOR RUSH</h3>
         <p className="text-lg font-helvetica w-[80%]">
