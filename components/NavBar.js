@@ -1,4 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
 
 function NavBar() {
   const panel1 = useRef();
