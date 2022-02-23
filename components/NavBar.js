@@ -17,9 +17,6 @@ function NavBar() {
   const panel5 = useRef();
   const panels = { 1: panel1, 2: panel2, 3: panel3, 4: panel4, 5: panel5 };
   const [active, setActive] = useState(panel1);
-  //   useEffect(() => {
-  //     console.log(active);
-  //   }, [active]);
 
   return (
     <div className="flex items-center justify-center h-24 bg-black ">

@@ -10,7 +10,6 @@ function SelectRGB({ setKeyboardVideo }) {
   const rainbowBtn = useRef();
   const visorBtn = useRef();
   const [active, setActive] = useState(rainBtn);
-  console.log(active === rainBtn);
   return (
     <div
       className="w-full md:hidden z-50 flex justify-center  absolute  top-[-4%]"

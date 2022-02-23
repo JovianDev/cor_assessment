@@ -4,7 +4,7 @@ import Image from 'next/image';
 function Hero() {
   return (
     <div
-      className="relative flex items-center justify-center w-screen  m-0 min-h-[50vh] overflow-hidden"
+      className="relative flex items-center justify-center w-screen  m-0 min-h-[60vh] overflow-hidden"
       name="memory-panel-container"
     >
       <video

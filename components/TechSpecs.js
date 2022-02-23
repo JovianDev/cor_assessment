@@ -13,7 +13,6 @@ function TechSpecs() {
         const URL = 'https://cwsmgmt.corsair.com/PowerSupplies.json';
         const { data } = await axios.get(URL);
         if (componentMounted) setSpecs(data);
-        console.log('RESULTS', data[0]);
       } catch (error) {
         return new Error(error);
       }
