@@ -22,7 +22,6 @@ function TechSpecs() {
     return () => (componentMounted = false);
   }, []);
 
-  console.log('ACTIVE', activeSpec);
   return (
     <div className="p-24 text-gray-100">
       <div>

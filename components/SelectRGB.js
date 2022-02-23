@@ -13,14 +13,14 @@ function SelectRGB({ setKeyboardVideo }) {
   console.log(active === rainBtn);
   return (
     <div
-      className="w-full z-50 flex justify-center  absolute  top-[-4%]"
+      className="w-full md:hidden z-50 flex justify-center  absolute  top-[-4%]"
       name="RGB selectors"
     >
       <div className="flex flex-col items-center mx-2">
         <button
           className={`p-1 mb-4 ${
             active === rainBtn
-              ? 'bg-black border-2 rounded-full border-stone-50'
+              ? 'bg-black border-2 rounded-[50%] border-stone-50'
               : 'bg-none border-2 border-transparent '
           }`}
           ref={rainBtn}

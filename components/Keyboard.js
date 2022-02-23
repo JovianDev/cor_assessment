@@ -4,7 +4,7 @@ import { RGBKeyboardMedia } from './utils/index';
 function Keyboard() {
   const [keyboardVideo, setKeyboardVideo] = useState(RGBKeyboardMedia.rain);
   const RGBVideo = useRef();
-  
+
   console.log('KEYBOARDVID', keyboardVideo);
   return (
     <div
@@ -29,6 +29,7 @@ function Keyboard() {
           src={`/video/${keyboardVideo.url}`}
           muted
           loop
+          poster="/img/keyboard-poster.png"
           ref={RGBVideo}
         >
           {/* <source

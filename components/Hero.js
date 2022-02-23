@@ -15,7 +15,6 @@ function Hero() {
       >
         <source src="/video/hero-bg.mp4" type="video/mp4" />
       </video>
-      {/* <div className="md:block hidden absolute min-w-full min-h-full max-w-[none] max-h-[none] top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%] z-[0] xl:scale-none  "> */}
       <img
         src="/img/hero-ddr5.webp"
         width="750px"
