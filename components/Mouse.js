@@ -22,12 +22,12 @@ function Mouse() {
         className="flex items-center justify-center flex-1 my-20 "
         name="mouse-scroll-animation"
       >
-        {/* <Image
+        <Image
           src="/img/mouse_sequence/00020.webp"
           height="650px"
           width="582px"
           alt="gaming mouse"
-        /> */}
+        />
         {/* <MouseAnimation /> */}
       </div>
     </div>
