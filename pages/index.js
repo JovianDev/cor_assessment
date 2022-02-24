@@ -27,17 +27,17 @@ export default function Home() {
         <div className="relative">
           <Hero />
         </div>
-        <div id="panel1" className="w-full" ref={observe}>
+        <div id="panel1" className="w-full">
           <ICUE />
         </div>
-        <div id="panel2" className="w-full" ref={observe}>
+        <div id="panel2" className="w-full">
           <Mouse />
         </div>
-        <div id="panel3" className="w-full" ref={observe}>
+        <div id="panel3" className="w-full">
           <Keyboard />
         </div>
         <div id="panel4" className="w-full" ref={observe}>
-          <Flavor />
+          {inView && <Flavor />}
         </div>
         <div id="panel5" className="w-full">
           <TechSpecs />

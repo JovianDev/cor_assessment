@@ -25,6 +25,18 @@ module.exports = {
     extend: {
       fontFamily: ['hover', 'focus'],
       keyframes: {
+        fadeOut: {
+          '80%': {
+            opacity: '1',
+          },
+
+          '100%': {
+            opacity: '0',
+          },
+          // '100%': {
+          //   display: 'none',
+          // },
+        },
         selectUp: {
           '0%': {
             transform: 'translateY(0)',
@@ -33,9 +45,29 @@ module.exports = {
             transform: 'translateY(-3px)',
           },
         },
+        slideUp: {
+          '0%': {
+            opacity: '0',
+          },
+          '69%': {
+            opacity: '0',
+          },
+          '70%': {
+            transform: 'translateY(400px)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+        },
       },
       animation: {
         selectUp: 'selectUp 0.5s forwards',
+        slideUpSlow: 'slideUp 4s',
+        slideUpMed: 'slideUp 3.5s',
+        slideUpFast: 'slideUp 3s',
+        videoFade: 'fadeOut 3s forwards 1 ',
       },
     },
   },
