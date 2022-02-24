@@ -9,7 +9,7 @@ function DropDownMenu({ specs, activeSpec, setActiveSpec }) {
       <select
         defaultValue={specs[0].name}
         onChange={handleSpecChange}
-        className="relative pl-6 pr-4 my-10 z-[0] text-2xl cursor-pointer bg-transparent border-2 h-14 w-72 border-stone-50 text-stone-50 focus:outline-none appearance-none "
+        className="relative pl-4 pr-4 my-10 z-[0] text-xl font-bold cursor-pointer bg-transparent border-2 h-12 w-48 border-stone-50 text-stone-50 focus:outline-none appearance-none "
       >
         {specs.map((spec, i) => {
           return (
@@ -20,10 +20,10 @@ function DropDownMenu({ specs, activeSpec, setActiveSpec }) {
         })}
       </select>
       <svg
-        className="absolute left-56 md:left-[68%] sm:left-[70%] top-[3.3rem] hover:cursor-pointer pointer-events-none "
+        className="absolute left-[9.5rem] md:left-[60%] sm:left-[65%] top-[3.2rem] hover:cursor-pointer pointer-events-none "
         xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
+        width="25"
+        height="25"
         fill="currentColor"
         viewBox="0 0 16 16"
       >

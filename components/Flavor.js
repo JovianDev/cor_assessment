@@ -3,7 +3,7 @@ import React from 'react';
 
 function Flavor() {
   return (
-    <div className="relative flex px-5 bg-[url(/img/bg-creme-min.png)] bg-cover bg-center w-full min-h-[50vh] overflow-hidden">
+    <div className="relative flex px-5 bg-[url(/img/bg-creme-min.png)] bg-cover bg-center w-full min-h-[65vh] overflow-hidden">
       {/* <div className="absolute bottom-0 left-0 z-[99]">
         <video autoPlay muted src="video/fruit.mp4" />
       </div> */}
