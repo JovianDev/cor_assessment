@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DropDownMenu({ specs, activeSpec, setActiveSpec }) {
+function DropDownMenu({ specs, setActiveSpec }) {
   const handleSpecChange = (e) => {
     setActiveSpec(e.target.value);
   };

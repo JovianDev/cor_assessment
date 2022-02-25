@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+//   const handlePrevClick = () => {
+//     console.log(carousel.current);
 
-function SliderButtons({ carousel, prog, setProg }) {
-  //   const handlePrevClick = () => {
-  //     console.log(carousel.current);
+//     console.log('prog in click', prog);
 
-  //     console.log('prog in click', prog);
+//     parseFloat(prog) === 20
+//       ? setProg('100%')
+//       : setProg(`${parseFloat(prog) - 20}%`);
 
-  //     parseFloat(prog) === 20
-  //       ? setProg('100%')
-  //       : setProg(`${parseFloat(prog) - 20}%`);
+//     carousel.current.slickPrev();
+//   };
 
-  //     carousel.current.slickPrev();
-  //   };
+function SliderButtons({ carousel }) {
   return (
     <div
       name="sliderButtons"
@@ -19,10 +19,7 @@ function SliderButtons({ carousel, prog, setProg }) {
     >
       <br></br>
       <button
-        onClick={async (e) => {
-          e.preventDefault();
-          carousel.current.slickPrev();
-        }}
+        onClick={() => carousel.current.slickPrev()}
         className="mr-2 font-bold -bottom-36 left-4 text-stone-50 md:absolute "
       >
         <svg
@@ -37,15 +34,7 @@ function SliderButtons({ carousel, prog, setProg }) {
         </svg>
       </button>
       <button
-        onClick={(e) => {
-          e.preventDefault();
-          //   parseFloat(progress) === 100
-          //     ? setProgress('20%')
-          //     : setProgress(`${parseFloat(progress) + 20}%`);
-
-          carousel.current.slickNext();
-          return;
-        }}
+        onClick={() => carousel.current.slickNext()}
         className="ml-2 font-bold -bottom-36 right-4 text-stone-50 md:absolute "
       >
         <svg
@@ -56,10 +45,7 @@ function SliderButtons({ carousel, prog, setProg }) {
           viewBox="0 0 16 16"
           className="md:h-14 md:w-14"
         >
-          <path
-            // fill-rule="evenodd"
-            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-          />
+          <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
         </svg>
       </button>
     </div>

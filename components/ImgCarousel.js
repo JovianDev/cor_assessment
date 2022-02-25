@@ -7,6 +7,7 @@ import SliderButtons from './SliderButtons';
 function ImgCarousel({ slideImg }) {
   const carousel = useRef();
   const [prog, setProg] = useState('20%');
+  console.log(prog);
   var settings = {
     dots: false,
     arrows: false,
@@ -23,7 +24,7 @@ function ImgCarousel({ slideImg }) {
   return (
     <div
       name="sliderContainer"
-      className="relative  w-[60%] md:w-full max-w-full max-h-full min-h-[none] min-w-[none] pt-20  md:p-6"
+      className="relative w-[60%] md:w-full max-w-full max-h-full min-h-[none] min-w-[none] pt-20  md:p-6"
     >
       <div className="md:hidden">
         <SliderButtons carousel={carousel} prog={prog} setProg={setProg} />
@@ -46,7 +47,7 @@ function ImgCarousel({ slideImg }) {
       <div className="flex items-center justify-between w-full md:mb-16">
         <p className="pr-10 text-4xl font-bebas text-stone-50">01</p>
         <div
-          className={`w-full h-[8px] my-10 rounded-md  bg-stone-500 bg-gradient-to-r from-stone-50 to-stone-50 bg-no-repeat bg-[length:${20}%_100%]`}
+          className={`w-full h-[8px] my-10 rounded-md  bg-stone-500 bg-gradient-to-r from-stone-50 to-stone-50 bg-no-repeat bg-[length:20%_100%]`}
         />
         <p className="pl-10 text-4xl font-bebas text-stone-50">06</p>
       </div>
