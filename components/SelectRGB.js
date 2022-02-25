@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import Image from 'next/image';
 import { RGBKeyboardMedia } from './utils/index';
 const { rain, watercolor, colorShift, rainbow, visor } = RGBKeyboardMedia;
 
@@ -28,7 +27,7 @@ function SelectRGB({ setKeyboardVideo }) {
             setKeyboardVideo(rain);
           }}
         >
-          <Image
+          <img
             src="/img/swatch-rain.webp"
             height="65px"
             width="65px"
@@ -57,7 +56,7 @@ function SelectRGB({ setKeyboardVideo }) {
             setActive(watercolorBtn);
           }}
         >
-          <Image
+          <img
             src="/img/swatch-watercolor.webp"
             height="65px"
             width="65px"
@@ -85,7 +84,7 @@ function SelectRGB({ setKeyboardVideo }) {
             setActive(colorShiftBtn);
           }}
         >
-          <Image
+          <img
             src="/img/swatch-color_shift.png"
             height="65px"
             width="65px"
@@ -113,7 +112,7 @@ function SelectRGB({ setKeyboardVideo }) {
             setActive(rainbowBtn);
           }}
         >
-          <Image
+          <img
             src="/img/swatch-rainbow.webp"
             height="65px"
             width="65px"
@@ -141,7 +140,7 @@ function SelectRGB({ setKeyboardVideo }) {
             setActive(visorBtn);
           }}
         >
-          <Image
+          <img
             src="/img/swatch-visor.png"
             height="65px"
             width="65px"

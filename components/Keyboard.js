@@ -28,14 +28,9 @@ function Keyboard() {
           src={`/video/${keyboardVideo.url}`}
           muted
           loop
-          poster="/img/keyboard-poster.png"
+          poster="/img/keyboard_poster.webp"
           ref={RGBVideo}
-        >
-          {/* <source
-            src={`/video/${keyboardVideo.url}`}
-            type={`video/${keyboardVideo.type}`}
-          /> */}
-        </video>
+        />
       </div>
     </div>
   );

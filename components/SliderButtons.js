@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-function SliderButtons({ carousel }) {
+function SliderButtons({ carousel, prog, setProg }) {
+  //   const handlePrevClick = () => {
+  //     console.log(carousel.current);
+
+  //     console.log('prog in click', prog);
+
+  //     parseFloat(prog) === 20
+  //       ? setProg('100%')
+  //       : setProg(`${parseFloat(prog) - 20}%`);
+
+  //     carousel.current.slickPrev();
+  //   };
   return (
     <div
       name="sliderButtons"
-      className="absolute left-0 top-5 md:relative md:left-0 "
+      className="absolute left-0 top-1 md:relative md:left-0 "
     >
+      <br></br>
       <button
-        onClick={() => carousel.current.slickPrev()}
-        className="mr-2 font-bold -bottom-12 left-4 text-stone-50 md:absolute "
+        onClick={async (e) => {
+          e.preventDefault();
+          carousel.current.slickPrev();
+        }}
+        className="mr-2 font-bold -bottom-36 left-4 text-stone-50 md:absolute "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -22,8 +37,16 @@ function SliderButtons({ carousel }) {
         </svg>
       </button>
       <button
-        onClick={() => carousel.current.slickNext()}
-        className="ml-2 font-bold -bottom-12 right-4 text-stone-50 md:absolute "
+        onClick={(e) => {
+          e.preventDefault();
+          //   parseFloat(progress) === 100
+          //     ? setProgress('20%')
+          //     : setProgress(`${parseFloat(progress) + 20}%`);
+
+          carousel.current.slickNext();
+          return;
+        }}
+        className="ml-2 font-bold -bottom-36 right-4 text-stone-50 md:absolute "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

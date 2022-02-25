@@ -3,7 +3,6 @@ import Image from 'next/image';
 import MouseAnimation from './MouseAnimation';
 
 function Mouse() {
-  const mouseCanvas = useRef();
   return (
     <div className="flex p-10 items-center bg-[url('/img/bg-TriHexBackground3.png')] md:flex-col bg-cover bg-center w-full min-h-[50vh]">
       <div
