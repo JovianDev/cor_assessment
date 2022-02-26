@@ -10,19 +10,23 @@ import Flavor from '../components/Flavor';
 
 export default function Home() {
   const { ref: icueComponent, inView: icueInView } = useInView({
-    threshold: 0.5,
+    threshold: 1,
   });
   const { ref: mouseComponent, inView: mouseInView } = useInView({
-    threshold: 0.5,
+    threshold: 1,
   });
   const { ref: keyboardComponent, inView: keyboardInView } = useInView({
-    threshold: 0.2,
+    threshold: 1,
   });
   const { ref: flavorComponent, inView: flavorInView } = useInView({
+    threshold: 1,
+  });
+  const { ref: fruitAnimation, inView: fruitInView } = useInView({
     threshold: 0.2,
+    triggerOnce: true,
   });
   const { ref: specsComponent, inView: specsInView } = useInView({
-    threshold: 0.5,
+    threshold: 0.7,
   });
 
   return (
@@ -51,7 +55,7 @@ export default function Home() {
           <Keyboard />
         </div>
         <div id="panel4" className="w-full min-h-[65vh]" ref={flavorComponent}>
-          {flavorInView && <Flavor />}
+          <div ref={fruitAnimation}>{fruitInView && <Flavor />}</div>
         </div>
         <div id="panel5" className="w-full" ref={specsComponent}>
           <TechSpecs />

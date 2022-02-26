@@ -27,7 +27,7 @@ function ICUE() {
         <input
           type="button"
           value="LEARN MORE"
-          className="w-48 px-8 py-4 my-10 font-bold md:mb-10 md:w-96 bg-stone-50 font-helvetica hover:cursor-pointer hover:bg-stone-300 active:opacity-40 hover:shadow-md hover:animate-selectUp md:hover:animate-none"
+          className="w-48 px-8 py-4 my-10 font-bold md:mb-10 md:w-96 sm:w-[90%] bg-stone-50 font-helvetica hover:cursor-pointer hover:bg-stone-300 active:opacity-40 hover:shadow-md hover:animate-selectUp md:hover:animate-none"
         />
       </div>
       <Carousel slides={slides} />

@@ -19,7 +19,6 @@ export const slides = [
 
 // FXN to update progress bar on icue image slider
 export const updateProgress = (current, setProgressBar) => {
-  console.log(current);
   switch (current) {
     case 0:
       setProgressBar('bg-[length:16.6666667%_100%]');
@@ -41,5 +40,6 @@ export const updateProgress = (current, setProgressBar) => {
       break;
     default:
       setProgressBar('bg-[length:16.6666667%_100%]');
+      break;
   }
 };

@@ -13,7 +13,7 @@ function Keyboard() {
       <h3 className="mt-10 mb-6 text-5xl text-stone-50 font-bebas md:text-center">
         THE CENTERPIECE OF YOUR SETUP
       </h3>
-      <p className="w-[40%] mb-20 text-stone-50 text-md font-helvetica text-center">
+      <p className="w-[40%] sm:w-[60%] mb-20 text-stone-50 text-md font-helvetica text-center">
         The K100 RGB&apos;s refined design features a durable aluminum frame and
         dynamic pre-key RGB backlighting accented by a 44-zone three-sided RGB
         LightEdge.

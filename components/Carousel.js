@@ -5,7 +5,6 @@ function Carousel({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [progress, setProgress] = useState('bg-[length:16.6666667%_100%]');
 
-  console.log(currentSlide);
   let length = slides.length;
   const prevClick = () => {
     setCurrentSlide(currentSlide === 0 ? length - 1 : (currentSlide -= 1));
@@ -15,10 +14,9 @@ function Carousel({ slides }) {
   };
   useEffect(() => {
     updateProgress(currentSlide, setProgress);
-    console.log('UE CURRENT', currentSlide);
   }, [currentSlide]);
   return (
-    <div className="relative flex-col items-center justify-center xl:w-full xl:min-w-[700px] min-w-[60%] max-w-none md:p-14">
+    <div className="relative flex-col items-center justify-center xl:w-full  xl:min-w-[700px] md:min-w-0 sm:pb-24 sm:min-w-[500px] md:min-w-[none] min-w-[60%]  max-w-[none] md:p-14">
       <div>
         <CarouselButtons prev={prevClick} next={nextClick} />
       </div>
@@ -29,7 +27,7 @@ function Carousel({ slides }) {
               <img
                 src={slide.src}
                 alt="carousel image"
-                className="rounded-lg animate-carouselTrans"
+                className="w-full rounded-lg animate-carouselTrans "
                 key={slide.src}
                 height={446}
                 width={792}
@@ -37,7 +35,10 @@ function Carousel({ slides }) {
             )
         )}
       </div>
-      <div className="flex items-center justify-between w-full p-4 ">
+      <div
+        className="flex items-center justify-between w-full p-4 sm:my-0 "
+        name="progress-bar"
+      >
         <p className="pr-10 text-4xl font-bebas text-stone-50">01</p>
         <div
           className={`w-full h-[8px] my-10 rounded-md  bg-stone-600 bg-gradient-to-r from-stone-50 to-stone-50 bg-no-repeat ${progress}`}

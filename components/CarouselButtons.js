@@ -1,16 +1,16 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 
 function SliderButtons({ prev, next }) {
   return (
     <div
       name="sliderButtons"
-      className="absolute left-4 top-[-3.5rem] md:relative md:left-0 "
+      className="absolute left-4 top-[-3.5rem] md:relative md:left-0 md:min-w-0 "
     >
       <br></br>
       <button
         name="prevButton"
         onClick={prev}
-        className="mr-2 font-bold md:bottom-[-36rem] md:left-4 text-stone-50 md:absolute "
+        className="mr-2 font-bold md:bottom-[-36rem] sm:bottom-[-32rem] md:left-4 text-stone-50 md:absolute "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ function SliderButtons({ prev, next }) {
       <button
         name="nextButton"
         onClick={next}
-        className="ml-2 font-bold md:bottom-[-36rem] md:right-4 text-stone-50 md:absolute "
+        className="ml-2 font-bold md:bottom-[-36rem] sm:bottom-[-32rem] md:right-4 text-stone-50 md:absolute "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
