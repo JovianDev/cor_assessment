@@ -61,6 +61,17 @@ module.exports = {
             opacity: '1',
           },
         },
+        appearAndScale: {
+          '0%': {
+            transform: 'scale(0.94)',
+            opacity: '0',
+          },
+
+          '100%': {
+            transform: 'scale(1)',
+            opacity: '1',
+          },
+        },
       },
       animation: {
         selectUp: 'selectUp 0.5s forwards',
@@ -68,6 +79,7 @@ module.exports = {
         slideUpMed: 'slideUp 3.5s',
         slideUpFast: 'slideUp 3s',
         videoFade: 'fadeOut 3s forwards 1 ',
+        carouselTrans: 'appearAndScale 1.6s ease forwards 1',
       },
     },
   },

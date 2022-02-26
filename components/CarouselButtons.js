@@ -1,26 +1,16 @@
-import React from 'react';
-//   const handlePrevClick = () => {
-//     console.log(carousel.current);
+import React, { useState, useEffect, useRef } from 'react';
 
-//     console.log('prog in click', prog);
-
-//     parseFloat(prog) === 20
-//       ? setProg('100%')
-//       : setProg(`${parseFloat(prog) - 20}%`);
-
-//     carousel.current.slickPrev();
-//   };
-
-function SliderButtons({ carousel }) {
+function SliderButtons({ prev, next }) {
   return (
     <div
       name="sliderButtons"
-      className="absolute left-0 top-1 md:relative md:left-0 "
+      className="absolute left-0 top-[-3.5rem] md:relative md:left-0 "
     >
       <br></br>
       <button
-        onClick={() => carousel.current.slickPrev()}
-        className="mr-2 font-bold -bottom-36 left-4 text-stone-50 md:absolute "
+        name="prevButton"
+        onClick={prev}
+        className="mr-2 font-bold md:bottom-[-35rem] md:left-4 text-stone-50 md:absolute "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +24,9 @@ function SliderButtons({ carousel }) {
         </svg>
       </button>
       <button
-        onClick={() => carousel.current.slickNext()}
-        className="ml-2 font-bold -bottom-36 right-4 text-stone-50 md:absolute "
+        name="nextButton"
+        onClick={next}
+        className="ml-2 font-bold md:bottom-[-35rem] md:right-4 text-stone-50 md:absolute "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

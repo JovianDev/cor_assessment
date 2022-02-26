@@ -7,11 +7,39 @@ export const RGBKeyboardMedia = {
   visor: { url: 'tnk-visor.mp4', type: 'mp4' },
 };
 //image deck for iCUE slider
-export const slideImg = [
-  '/img/iCUE-carousel_slide01.webp',
-  '/img/iCUE-carousel_slide02.jpeg',
-  '/img/iCUE-carousel_slide03.webp',
-  '/img/iCUE-carousel_slide04.webp',
-  '/img/iCUE-carousel_slide05.webp',
-  '/img/iCUE-carousel_slide06.webp',
+
+export const slides = [
+  { src: '/img/iCUE-carousel_slide01.webp' },
+  { src: '/img/iCUE-carousel_slide02.jpeg' },
+  { src: '/img/iCUE-carousel_slide03.webp' },
+  { src: '/img/iCUE-carousel_slide04.webp' },
+  { src: '/img/iCUE-carousel_slide05.webp' },
+  { src: '/img/iCUE-carousel_slide06.webp' },
 ];
+
+// FXN to update progress bar on icue image slider
+export const updateProgress = (current, setProgressBar) => {
+  console.log(current);
+  switch (current) {
+    case 0:
+      setProgressBar('bg-[length:16.6666667%_100%]');
+      break;
+    case 1:
+      setProgressBar('bg-[length:33.3333333%_100%]');
+      break;
+    case 2:
+      setProgressBar('bg-[length:50%_100%]');
+      break;
+    case 3:
+      setProgressBar('bg-[length:66.6666667%_100%]');
+      break;
+    case 4:
+      setProgressBar('bg-[length:83.3333333%_100%]');
+      break;
+    case 5:
+      setProgressBar('bg-[length:100%_100%]');
+      break;
+    default:
+      setProgressBar('bg-[length:16.6666667%_100%]');
+  }
+};
