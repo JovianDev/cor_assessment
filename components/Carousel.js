@@ -22,7 +22,7 @@ function Carousel({ slides }) {
       <div>
         <CarouselButtons prev={prevClick} next={nextClick} />
       </div>
-      <div className="flex justify-center p-6 mb-4">
+      <div className="flex justify-center w-full p-4 mb-4">
         {slides.map(
           (slide, i) =>
             currentSlide === i && (
@@ -37,7 +37,7 @@ function Carousel({ slides }) {
             )
         )}
       </div>
-      <div className="flex items-center justify-between w-full ">
+      <div className="flex items-center justify-between w-full p-4 ">
         <p className="pr-10 text-4xl font-bebas text-stone-50">01</p>
         <div
           className={`w-full h-[8px] my-10 rounded-md  bg-stone-600 bg-gradient-to-r from-stone-50 to-stone-50 bg-no-repeat ${progress}`}
