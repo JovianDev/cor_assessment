@@ -22,9 +22,6 @@ html {
   html {
     font-family: Helvetica;
   }
-  body {
-    overflow-x: visible;
-  }
 }
 @layer utilities {
   @variants responsive {
