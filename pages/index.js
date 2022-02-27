@@ -16,17 +16,17 @@ export default function Home() {
     threshold: 1,
   });
   const { ref: keyboardComponent, inView: keyboardInView } = useInView({
-    threshold: 1,
+    threshold: 0.7,
   });
   const { ref: flavorComponent, inView: flavorInView } = useInView({
-    threshold: 1,
+    threshold: 0.7,
   });
   const { ref: fruitAnimation, inView: fruitInView } = useInView({
     threshold: 0.2,
     triggerOnce: true,
   });
   const { ref: specsComponent, inView: specsInView } = useInView({
-    threshold: 0.7,
+    threshold: 0.6,
   });
 
   return (

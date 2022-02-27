@@ -1,52 +1,74 @@
-// import React, { useState, useRef } from 'react';
+// import { handle } from 'express/lib/application';
+// import React, { useState, useRef, useEffect } from 'react';
+// import { getFrames } from './utils/index';
+// console.log('FRAMES', getFrames(60));
+
 // function MouseAnimation() {
-//   const [scrollTop, setScrollTop] = useState(null);
+//   //   const [scrollTop, setScrollTop] = useState(null);
 //   const [maxScrollTop, setMaxScrollTop] = useState(null);
 //   const [scrollFraction, setScrollFraction] = useState(null);
 //   const [frameIndex, setFrameIndex] = useState(null);
+//   const [progress, setProgress] = useState(0);
+
 //   const [img, setImg] = useState(null);
 //   const mouseCanvas = useRef();
-//   const currentFrame = (index) => {
-//     return `/img/mouse_sequence/${index.toString().padStart(5, '0')}.webp`;
-//   };
-//   if (process.browser) {
-//     const canvas = document.querySelector('canvas');
-//   }
-//   //   const ctx = canvas.getContext('2d')
 //   const frameCount = 60;
-//   const preloadImages = () => {
-//     for (let i = i; i < frameCount; i++) {
-//       setImg = new Image();
-//       img.src = currentFrame(i);
-//     }
-//     'PRELOAD', preloadImages();
+//   const frames = getFrames(frameCount);
+//   const currentFrame = (index) => {
+//     return frames[index].src;
 //   };
-//   if (process.browser) {
-//     window.addEventListener('scroll', () => {
-//       setScrollTop(html.scrollTop);
-//       setMaxScrollTop(html.scrollHeight - window.innerHeight);
-//       setScrollFraction(scrollTop / maxScrollTop);
-//       setFrameIndex(
-//         Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount))
-//       );
-//       console.log('FRAME INDEX', frameIndex);
-//     });
-//   }
-//   console.log('CURR', currentFrame);
+//   //   const canvas = document.querySelector('canvas');
 
-//   const updateImage = (index) => {
-//     setImg({ src: currentFrame(index) });
-//     // canvas?.drawImage(img, 0, 0);
+//   //   const ctx = canvas.getContext('2d')
+//   //   if (typeof window) {
+//   //     const handleScroll = () => {
+//   //       setScrollTop(html.scrollTop);
+//   //       console.log(scrollTop);
+//   //       setMaxScrollTop(html.scrollHeight - window.innerHeight);
+//   //       setScrollFraction(scrollTop / maxScrollTop);
+//   //       setFrameIndex(
+//   //         Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount))
+//   //       );
+//   //     };
+//   //     console.log('FRAME INDEX', frameIndex);
+//   //   }
+//   //   console.log('CURR', currentFrame);
+//   //   if (typeof window) {
+//   //     window.addEventListener('scroll', () => {
+//   //       setScrollTop(html.scrollTop);
+//   //       setMaxScrollTop(html.scrollHeight - window.innerHeight);
+//   //       setScrollFraction(scrollTop / maxScrollTop);
+//   //       setFrameIndex(
+//   //         Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount))
+//   //       );
+//   //     });
+//   //   }
+
+//   //   const scrollHandler = (event) => {
+//   //     console.log('IN SCROLL');
+//   //     if (typeof window) {
+//   //       const containerHeight = event.currentTarget.clientHeight;
+//   //       const scrollHeight = event.currentTarget.scrollHeight;
+
+//   //       const scrollTop = event.currentTarget.scrollTop;
+//   //       setProgress(((scrollTop + containerHeight) / scrollHeight) * 100);
+//   //       console.log('PROGRESS', scrollHeight, progress);
+//   //     }
+//   //   };
+//   const handleScroll = () => {
+//     console.log('im scrolling');
 //   };
-//   if (process.browser) {
-//     requestAnimationFrame(() => updateImage(frameIndex + 1));
-//   }
 
+//   //   const updateImage = (index) => {
+//   //     setImg({ src: currentFrame(index) });
+//   // canvas?.drawImage(img, 0, 0);
+//   //   };
+//   //   if (process.browser) {
+//   //     requestAnimationFrame(() => updateImage(frameIndex + 1));
+//   //   }
 //   return (
 //     // <div className="fixed left-[50%] top-[50%] max-h-full max-w-full translate-x-[-50%] translate-y-[-50%]">
-//     <div>
-//       <canvas ref={mouseCanvas} />
-//     </div>
+//     <div ref={mouseCanvas}>{/* <canvas ref={mouseCanvas} /> */}</div>
 //   );
 // }
 

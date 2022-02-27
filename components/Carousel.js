@@ -16,7 +16,7 @@ function Carousel({ slides }) {
     updateProgress(currentSlide, setProgress);
   }, [currentSlide]);
   return (
-    <div className="relative flex-col items-center justify-center xl:w-full  xl:min-w-[700px] md:min-w-0 sm:pb-24 sm:min-w-[500px] md:min-w-[none] min-w-[60%]  max-w-[none] md:p-14">
+    <div className="relative flex-col items-center justify-center xl:w-full  xl:min-w-[700px]  sm:pb-24 sm:min-w-[500px]  min-w-[60%]  max-w-[none] md:p-14">
       <div>
         <CarouselButtons prev={prevClick} next={nextClick} />
       </div>

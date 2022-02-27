@@ -10,7 +10,7 @@ function Keyboard() {
       className="flex flex-col items-center justify-center w-full"
       name="keyboardPanelContainer"
     >
-      <h3 className="mt-10 mb-6 text-5xl text-stone-50 font-bebas md:text-center">
+      <h3 className="mt-10 mb-6 text-5xl text-stone-50 font-bebas md:text-center sm:px-5">
         THE CENTERPIECE OF YOUR SETUP
       </h3>
       <p className="w-[40%] sm:w-[60%] mb-20 text-stone-50 text-md font-helvetica text-center">

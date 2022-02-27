@@ -43,7 +43,7 @@ function SpecGrid({ displaySpec }) {
                 <p key={feat.name} className="flex-1 mx-12 text-stone-50">
                   {feat.name}
                 </p>
-                <div className="flex-1 mx-12">
+                <div className="flex-1 mx-12" key={value.value}>
                   {value.value.split('|').length < 2 ? (
                     <p key={value.value}>{value.value}</p>
                   ) : (

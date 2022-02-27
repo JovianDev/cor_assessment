@@ -4,7 +4,7 @@ import MouseAnimation from './MouseAnimation';
 
 function Mouse() {
   return (
-    <div className="flex p-10 items-center bg-[url('/img/bg-TriHexBackground3.png')] md:flex-col bg-cover bg-center w-full min-h-[50vh]">
+    <div className="flex  p-10 items-center bg-[url('/img/bg-TriHexBackground3.png')] md:flex-col bg-cover bg-center w-full min-h-[50vh]">
       <div
         name="mouse-info"
         className="flex flex-col items-start justify-center flex-1 p-10 md:items-center md:text-center"

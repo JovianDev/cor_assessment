@@ -16,7 +16,16 @@ export const slides = [
   { src: '/img/iCUE-carousel_slide05.webp' },
   { src: '/img/iCUE-carousel_slide06.webp' },
 ];
-
+//FXN to get mouse animation frames
+export const getFrames = (frameCount) => {
+  let frames = [];
+  for (let i = 0; i < frameCount; i++) {
+    frames.push({
+      src: `/img/mouse_sequence/${i.toString().padStart(5, '0')}.webp`,
+    });
+  }
+  return frames;
+};
 // FXN to update progress bar on icue image slider
 export const updateProgress = (current, setProgressBar) => {
   switch (current) {
